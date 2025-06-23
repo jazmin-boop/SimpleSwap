@@ -270,8 +270,11 @@ contract SimpleSwap {
 
 ## Example of Use
 1.The user calls addLiquidity() and sends equal values of tokenA and tokenB.
+
 2.Another user does a swap using swapExactTokensForTokens().
+
 3.A provider can call removeLiquidity() to get their tokens back.
+
 
 ###Technical Notes
 
