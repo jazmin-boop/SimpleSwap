@@ -268,7 +268,7 @@ contract SimpleSwap {
 ```
 
 
-###Example of Use
+## Example of Use
 1.The user calls addLiquidity() and sends equal values of tokenA and tokenB.
 
 2.Another user does a swap using swapExactTokensForTokens().
@@ -276,13 +276,15 @@ contract SimpleSwap {
 3.A provider can call removeLiquidity() to get their tokens back.
 
 
-###Technical Notes
+## Technical Notes
 
 1.Swap Formula: The swap uses the classic AMM formula:
 x * y = k (no fees included).
 
 2.Deadline: Uses Unix timestamps. On the frontend or console, you can set it like this:
-Math.floor(Date.now() / 1000) + 600
+ ```js
+         Math.floor(Date.now() / 1000) + 600
+ ```
 (This gives 10 minutes to do the transaction.)
 
 3.First Liquidity: When the pool starts, the amount of liquidity tokens given is:
